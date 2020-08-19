@@ -5,7 +5,7 @@ print("no of guesess is limited you have only 5 chance.")
 while(no_of_guess<=5):
     guess=int(input("enter correct number:"))
     if guess > 18:
-        print("you enterd much more please enter lesser number.\n")
+        print("you enterd greater no please enter smallest number.\n")
     elif guess <18:
         print("you entered a smallest no please choose greater no.\n")
     else:
