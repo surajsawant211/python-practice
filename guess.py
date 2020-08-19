@@ -1,16 +1,18 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#Guess number game!
+n=18
+no_of_guess=1
+print("no of guesess is limited you have only 5 chance.")
+while(no_of_guess<=5):
+    guess=int(input("enter correct number:"))
+    if guess > 18:
+        print("you enterd much more please enter lesser number.\n")
+    elif guess <18:
+        print("you entered a smallest no please choose greater no.\n")
+    else:
+        print("Congratulations ! you guessed correct number\n")
+        print(no_of_guess,"no of guess he took to finish.")
+        break
+    print(5-no_of_guess,"guesses are left")
+    no_of_guess=no_of_guess+1
+    if(no_of_guess>5):
+        print("Sorry you lost to guess correct number.")
