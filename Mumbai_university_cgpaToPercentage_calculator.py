@@ -8,6 +8,7 @@ sem7 = float(input('enter your pointer of sem7:'))
 cgpa_avg = (sem3+sem4+sem5+sem6+sem7)/(5.0)
 print('your avg cgpa is:',cgpa_avg)
 if cgpa_avg < 6.75:
+  #have some fun here :p
   print('you are not eligible for placements.') 
   print("\U0001F923"*4)
 
